@@ -42,4 +42,19 @@ public class AddressBook {
 
         return null;
     }
+
+    /**
+     * Get a buddy in the buddies list
+     *
+     * @param index The index of the buddy to get
+     *
+     * @return The buddy
+     */
+    public BuddyInfo getBuddy(int index) {
+        if (index >= 0 && index < this.buddies.size()) {
+            return this.buddies.get(index);
+        }
+
+        return null;
+    }
 }
